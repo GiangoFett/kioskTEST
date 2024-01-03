@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration  
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
+  xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+  <Profiles>
+    <Profile Id="{S-1-5-21-3853531375-1794680210-889408199-1005}">       
+      <AllAppsList>
+        <AllowedApps> 
+          <!-- <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />  -->
+          <!-- <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />  -->
+          <!-- <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" /> -->
+          <!-- <App DesktopAppPath="C:\Windows\system32\cmd.exe" /> -->
+          <!-- <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" /> -->
+          <App DesktopAppPath="%windir%\explorer.exe" />
+          <App DesktopAppPath="C:\Program Files\Google\Chrome\Application\chrome.exe"
+        </AllowedApps> 
+      </AllAppsList> 
+      <win11:StartPins>
+        <![CDATA[  
+          { "pinnedList":[
+            {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk"},
+            {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Command Prompt.lnk"},
+            {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell.lnk"}
+          ] }
+        ]]>
+      </win11:StartPins>
+      <Taskbar ShowTaskbar="true"/>
+    </Profile> 
+  </Profiles>
+  <Configs>
+    <Config>
+      <Account>.\kioskTEST</Account>
+      <DefaultProfile Id="{S-1-5-21-3853531375-1794680210-889408199-1005}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>
