@@ -12,7 +12,7 @@
           <!-- <App DesktopAppPath="C:\Windows\system32\cmd.exe" /> -->
           <!-- <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" /> -->
           <App DesktopAppPath="%windir%\explorer.exe" />
-          <App DesktopAppPath="C:\Program Files\Google\Chrome\Application\chrome.exe"
+          <App DesktopAppPath="C:\Program Files\Google\Chrome\Application\chrome.exe">
         </AllowedApps> 
       </AllAppsList> 
       <win11:StartPins>
